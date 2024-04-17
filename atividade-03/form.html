@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+
+<body>
+    <h1 align="center">Formulário de Informações do Drone FPV</h1>
+
+    <form class="form-fpv" action="scrip.sql" method="post">
+
+
+        <fieldset class="container">
+            <legend align="center">Dados Pessoais</legend>
+
+            <div>
+                <label>Nome: </label>
+                <input type="text" name="Nome" placeholder="Coloque seu nome">
+                <label>Data de Nacimento: </label>
+                <input type="date" name="DataNasc">
+                <label>E-mail: </label>
+                <input type="email" name="email">
+
+            </div>
+
+            <div>
+                <label>Sobrenome: </label>
+                <input type="text" name="Sobrenome" placeholder="Coloque seu sobrenome">
+                <label>Idade: </label>
+                <input type="number" name="number" minlength="1">
+                <label>Telefone: </label>
+                <input type="tel" name="tel" placeholder="+55(00)99999-9999" maxlength="17">
+            </div>
+        </fieldset>
+
+        <div class="question">
+            <p>Qual é o seu nível de experiência com drones? </p>
+            <input type="radio" name="nivel" id="1"> Iniciante
+            <input type="radio" name="nivel" id="2"> Intermediário
+            <input type="radio" name="nivel" id="3">Avançado
+            </p>
+
+            <p>Para que você pretende usar o drone FPV?</p>
+            <input type="checkbox" name="usarDrone" id="1"> Hobby
+            <input type="checkbox" name="usarDrone" id="2"> Fotografia / Videografia
+            <input type="checkbox" name="usarDrone" id="3"> Corridas
+            <input type="checkbox" name="usarDrone" id="4"> Outro
+
+            <p for="fpv-camera">Câmera FPV utilizada:</p>
+            <input type="text" id="fpv-camera" name="fpv-camera"><br>
+
+            <p>Qual é a sua fabricante favorita?</p>
+            <select name="top-fabriucante" id="">
+                <option value=""></option>
+                <option value="dji">DJI</option>
+                <option value="betaflight">Betaflight</option>
+                <option value="t-motor">T-Motor </option>
+                <option value="foxeer">Foxeer </option>
+                <option value="frsky">FrSky</option>
+                <option value="fat-shark">Fat Shark</option>
+                <option value="immersionrc">ImmersionRC</option>
+            </select>
+
+            <p> Qual é o seu proposito no mundo do FPV?</p>
+                <textarea name="proposito" id="" cols="30" rows="3"></textarea>
+            </p>
+
+            <p> Tipo de voo preferido:</p>
+            <input type="radio" id="fpv-racing" name="fpv-tipo-voo" value="racing"> Racing
+            <input type="radio" id="fpv-freestyle" name="fpv-tipo-voo" value="freestyle"> Freestyle
+            <input type="radio" id="fpv-cinematic" name="fpv-tipo-voo" value="cinematic"> Cinematic
+
+            <p>Drone FPV utilizado:</p>
+            <input type="text" id="fpv-drone" name="fpv-drone"><br>
+
+            <p> De acordo com o seu tipo de voo, descreva a sua melhor experiência </p>
+                <textarea name="experiencia" id="" cols="30" rows="3"></textarea>
+            
+           
+            <p>Canal FPV utilizado:</p>
+            <select id="fpv-channel" name="fpv-channel">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="R">R</option>
+            </select><br>
+
+            
+
+            <!-- Botões -->
+            <input type="reset" value="Limpar" name="limpar">
+            <input type="submit" value="Enviar" name="Enviar">
+        </div>
+    </form>
+
+</body>`
+
+</html>

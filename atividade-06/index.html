@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drone FPV</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" href="./img/caetano_full_black-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="menu">
+        <div class="logo-menu">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <li><a id="menu-ativo" href="./index.html">Home</a></li>
+                <li><a href="./racing.html">Racing</a></li>
+                <li><a href="./freestyler.html">Freestyle</a></li>
+                <li><a href="./long-rang.html">Long Range</a></li>
+                <li><a href="./cinematografo.html">Cinematográfico</a></li>
+            </ul>
+        </div>     
+    </nav>
+
+    <div id="banner">
+        <div>
+            <img src="./img/drone-fpv-racing-02.svg" alt="">
+        </div>
+        <div id="titulo">
+            <h1>Explorando o mundo dos drones</h1>
+            <p>Bem-vindo ao nosso mundo de aventuras aéreas! Aqui, você encontrará tudo o que precisa saber sobre drones
+                e suas modalidades emocionantes, incluindo Racing, Freestyle, Long-range e Cinematografia. Explore
+                nossos conteúdos exclusivos, tutoriais, análises e muito mais. Seja um iniciante ou um piloto
+                experiente, há sempre algo novo para descobrir. Então, prepare-se para decolar conosco e descubra o
+                mundo sob uma nova perspectiva.</p>
+        </div>
+    </div>
+
+    <div id="conteudo">
+        <div class="div1 div-padrao">
+            <div>
+                <img src="img/drone-fpv-racing-03.svg" alt="">
+                <h2>Racing</h2>
+                <p>Modalidade de competição de drones em pistas com obstáculos, usando drones leves, rápidos e
+                    manobráveis.</p>
+            </div>
+            <div>
+                <img src="img/drone-fpv-delivre-04.svg" alt="">
+                <h2>Freestyle</h2>
+                <p>Modalidade de acrobacias e manobras com drones mais estáveis e manobráveis, com liberdade
+                    para criar desafios e rotas.</p>
+            </div>
+            <div>
+                <img src="img/drone-fpv-trabalho-01.svg" alt="">
+                <h2>Long-range</h2>
+                <p>Modalidade de voar com drones a grandes distâncias para capturar imagens ou vídeos de
+                    locais remotos, com equipamentos de transmissão mais poderosos e habilidades de navegação avançadas.
+                </p>
+            </div>
+            <div>
+                <img src="img/drone-fpv-cine.png" alt="">
+                <h2>Cinematografia</h2>
+                <p>Modalidade criativa que visa capturar imagens incríveis de diferentes lugares e
+                    eventos com drones equipados com câmeras de alta resolução e estabilização de imagem avançada.</p>
+            </div>
+        </div>
+        <div class="div2">
+            <div>
+                <h1>Deixa-me saber mais sobre você</h1>
+            </div>
+            <div class="container-form">
+                <div>
+                    <img src="./img/drone-fpv-racing-01.svg" alt="">
+                </div>
+                <div>
+                    <form method="post" action="enviar.php">
+                        <fieldset>
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" id="nome" required>
+                        <label for="email">Endereço de e-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+
+                        </fieldset>
+                        <div class="select-container">
+                            <div>
+                                <label for="experiencia">Você possui experiência com drones?</label>
+                                <select name="experiencia" id="experiencia">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="proposito">Qual é o seu propósito para usar um drone?</label>
+                                <select name="proposito" id="proposito">
+                                    <option value="fotografia">Fotografia/vídeo</option>
+                                    <option value="inspecao">Inspeção/mapeamento</option>
+                                    <option value="entretenimento">Entretenimento</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="select-container">
+                            <div>
+                                <label for="nivel">Qual é o seu nível de habilidade com drones?</label>
+                                <select name="nivel" id="nivel">
+                                    <option value="iniciante">Iniciante</option>
+                                    <option value="intermediario">Intermediário</option>
+                                    <option value="avancado">Avançado</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="orcamento">Qual é o seu orçamento para um drone?</label>
+                                <select name="orcamento" id="orcamento">
+                                    <option value="ate500">Até R$500</option>
+                                    <option value="500a1000">R$500 - R$1.000</option>
+                                    <option value="1000a2000">R$1.000 - R$2.000</option>
+                                    <option value="2000a3000">R$2.000 - R$3.000</option>
+                                    <option value="maisde3000">Mais de R$3.000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="preferencia">Você tem alguma preferência de marca ou modelo de drone?</label>
+                        <input type="text" name="preferencia" id="preferencia">
+                        <input type="submit" value="Enviar" name="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="logo-menu">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="footer-meio">
+                        <p>Serviço de atendimento ao consumidor</p>
+                        <span>&copy; Todos direitos reservados</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flex-container">
+                        <a href="https://github.com/" target="_blank"><img src="img/icon/icons-github.png" alt=""></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/icon/icons-instagram.png" alt=""></a>
+                        <a href="https://br.linkedin.com/" target="_blank"><img src="img/icon/icons-linkedin.png" alt=""></a>
+                        <a href="https://medium.com/" target="_blank"><img src="img/icon/icons-medium.png" alt=""></a>
+                        <a href="https://youtube.com/" target="_blank"><img src="img/icon/icons-youtube.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

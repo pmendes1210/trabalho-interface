@@ -1,0 +1,114 @@
+body {
+    background-color: #353740;
+    color: white;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #353740;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-fpv {
+    background-color: #31c1e8;
+    width: 700px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(122, 216, 231, 0.439);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    flex: 1;
+    display: block;
+    margin-right: 10px;
+
+}
+
+.container div input,
+select,
+textarea,input[type="text"] {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.question {
+    padding: 10px;
+}
+
+
+/* https://www.w3schools.com/css/css_attribute_selectors.asp */
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pag-init {
+    background-color: #31c1e8;
+    width: 500px;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(122, 216, 231, 0.439);
+    align-items: center;
+}
+
+.pag-init  h1 {
+    color: #353740;
+}
+
+.pag-init button {
+    background-color: #026c89;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pag-init h2 {
+    color: #353740;
+}
+
+.pag-init button a {
+    text-decoration: none;
+    color: white;
+}
